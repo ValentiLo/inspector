@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полноэкранные секции с центрованным контентом</title>
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="style3.css">
+  </head>
+  <body>
+    <!--
+      Разметку можно изменять
+      Но нельзя изменять элементы с классом .text-imitator
+    -->
+    <div>
+      <span class="text-imitator text--header">Имитация текста шапки</span>
+    </div>
+    <div>
+      <span class="text-imitator text--section-1">Имитация текста раздела</span>
+    </div>
+    <div>
+      <span class="text-imitator text--section-2">Имитация текста раздела</span>
+    </div>
+    <div>
+      <span class="text-imitator text--footer">Имитация текста подвала</span>
+    </div>
+    <p>Кейс 1. Проверка на вьюпорте 640px</p>
+    <img src="case-1 3.png" alt="Кейс 1. Проверка на вьюпорте 640px">
+    <p>Кейс 2. Проверка на вьюпорте 720px</p>
+    <img src="case-2 3.png" alt="Кейс 2. Проверка на вьюпорте 720px">
+    <p>Кейс 3. Проверка на вьюпорте 640px с изменением текста</p>
+    <img src="case-3 3.png" alt="Кейс 3. Проверка на вьюпорте 640px с изменением текста">
+    <p>Кейс 4. Проверка на вьюпорте 720px с изменением текста</p>
+    <img src="case-4 3.png" alt="Кейс 4. Проверка на вьюпорте 720px с изменением текста">
+ 
+    <pre>Полноэкранные секции с центрованным контентом
+        Уровень сложности: джун
+        Категория: HTML и CSS / Сетки
+        
+        Такие секции растягиваются на всю ширину окна браузера и заливаются фоном. Содержание внутри них обычно фиксированной ширины и центруется.
+        
+        Очень часто полноэкранные секции чередуются с центрованными секциями фиксированной ширины.
+        
+        Доработайте вёрстку так, чтобы её внешний вид совпадал с эталонным решением в разных условиях.
+        
+        Правила и подсказки:
+        
+        Размеры и отступы кратны 5 пикселям
+        Не изменяйте разметку элементов с классом .text-imitator
+        Используемые цвета: #00E0FF, #000000
+        Сценарии тестирования:
+        
+        Ширина вьюпорта — 640px,
+        Ширина вьюпорта — 720px,
+        Ширина вьюпорта — 720px, изменены размеры «текста»
+        Ширина вьюпорта — 720px, изменены размеры «текста»</pre>
+        <pre>
+            body {
+                margin: 0;
+                padding: 0;
+                font-size: 18px;
+                line-height: 25px;
+                font-family: 'Times New Roman', Times, serif;
+                color: black;
+                background-color: white;
+              }
+              
+              /*
+                Настройки заглушек, имитирующих текст
+                Изменять их не надо
+              */
+              .text-imitator {
+                --total-height: 30px;
+                --total-width: 500px;
+                --text-color: #999;
+              }
+              
+              .text--header {
+                --text-color: #A1EEFF;
+              }
+              
+              .text--section-1 {
+                --total-height: 70px;
+              }
+              
+              .text--section-2 {
+                --total-width: 400px;
+                --total-height: 70px;
+                --text-color: #A1EEFF;
+              }
+              
+              .text--footer {
+                --total-width: 200px;
+              }
+              
+              
+              /*
+                Стили компонента пишите здесь
+              
+                Используемые цвета
+                #00E0FF
+                #000000
+              */
+              
+        </pre>
+        <a href="index.html" style="background-color: red; padding: 30px;margin-left: 300px;">На главную</a>
+
+</body>
+</html>

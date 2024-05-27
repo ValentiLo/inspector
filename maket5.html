@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Три колонки, фиксированная ширина, неравномерные отступы</title>
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="style5.css">
+  </head>
+  <body>
+    <!--
+      Разметку можно изменять
+      Но нельзя изменять элементы с классом .text-imitator
+    -->
+    <div>
+      <span class="text-imitator text--left">Имитация лого</span>
+    </div>
+    <div>
+      <span class="text-imitator text--center">Имитация меню</span>
+    </div>
+    <div>
+      <span class="text-imitator text--right">Имитация телефона</span>
+    </div>
+    <p>Кейс 1. Проверка на вьюпорте 900px</p>
+    <img src="case-1 5.png" alt="Кейс 1. Проверка на вьюпорте 900px">
+    <p>Кейс 2. Проверка на вьюпорте 900px с изменением текста</p>
+    <img src="case-2 5.png" alt="Кейс 2. Проверка на вьюпорте 900px с изменением текста">
+    <p>Кейс 3. Проверка на вьюпорте 900px с изменением текста</p>
+    <img src="case-3 5.png" alt="Кейс 3. Проверка на вьюпорте 900px с изменением текста">
+    <pre>Три колонки, фиксированная ширина, неравномерные отступы
+        Уровень сложности: джун
+        Категория: HTML и CSS / Сетки
+        
+        Простейшая сетка из трёх колонок. Количество колонок неизменно. Ширина колонок задана по макету и не зависит от размера содержания. Высота колонок меняется в зависимости от содержания. Высоты колонок независимы.
+        
+        Доработайте вёрстку так, чтобы её внешний вид совпадал с эталонным решением в разных условиях.
+        
+        Правила и подсказки:
+        
+        Размеры и отступы кратны 5 пикселям
+        Не изменяйте разметку элементов с классом .text-imitator
+        Используемые цвета: #00E0FF, #F5F5F5, #4EF483
+        Сценарии тестирования:
+        
+        Ширина вьюпорта — 900px,
+        Ширина вьюпорта — 900px, изменены размеры «текста»
+        Ширина вьюпорта — 900px, изменены размеры «текста»</pre>
+        <pre>
+            body {
+                margin: 0;
+                padding: 0;
+                font-size: 18px;
+                line-height: 25px;
+                font-family: 'Times New Roman', Times, serif;
+                color: black;
+                background-color: white;
+              }
+              
+              /*
+                Настройки заглушек, имитирующих текст
+                Изменять их не надо
+              */
+              .text-imitator {
+                --total-height: 30px;
+                --total-width: 100px;
+                --text-color: #A1EEFF;
+              }
+              
+              .text--center {
+                --total-width: 200px;
+              }
+              
+              .text--right {
+                --total-width: 100px;
+                --text-color: #B0FFAA;
+              }
+              
+              
+              /*
+                Стили компонента пишите здесь
+              
+                Используемые цвета
+                #F5F5F5
+                #00E0FF
+                #4EF483
+              */
+              
+        </pre>
+        <a href="index.html" style="background-color: red; padding: 30px;margin-left: 300px;">На главную</a>
+
+</body>
+</html>

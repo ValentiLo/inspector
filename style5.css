@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: white;
+  }
+  
+  /*
+    Настройки заглушек, имитирующих текст
+    Изменять их не надо
+  */
+  .text-imitator {
+    --total-height: 30px;
+    --total-width: 100px;
+    --text-color: #A1EEFF;
+  }
+  
+  .text--center {
+    --total-width: 200px;
+  }
+  
+  .text--right {
+    --total-width: 100px;
+    --text-color: #B0FFAA;
+  }
+  
+  
+  /*
+    Стили компонента пишите здесь
+  
+    Используемые цвета
+    #F5F5F5
+    #00E0FF
+    #4EF483
+  */
+  

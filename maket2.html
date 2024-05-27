@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Табы</title>
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <div class="tabs">
+      <div class="tab-title tab-title--open">Замок</div>
+      <div class="tab-content">
+        <h1>Замок</h1>
+        <p>Традиционный для серии Heroes «рыцарский» город, в котором присутствуют юниты, наиболее близкие к реальным средневековым воинам и монахам, вместе с мифическими грифонами и ангелами. У города хорошо оснащённая армия, включая двух стрелков и двух летающих воинов, при быстрой доступности для найма.</p>
+      </div>
+      <div class="tab-title">Оплот</div>
+      <div class="tab-content">
+        <h1>Оплот</h1>
+        <p>Город, представляющий собой гармоничное сосуществование цивилизации и дикой природы и населённый лесными созданиями (эльфами, гномами, единорогами, дендроидами), а также являющийся домом для «добрых» зелёных и золотых драконов.</p>
+      </div>
+      <div class="tab-title">Башня</div>
+      <div class="tab-content">
+        <h1>Башня</h1>
+        <p>Магический город с высокой башенной архитектурой, больше других в игре ориентированный на волшебство. Герои-воины, называемые алхимиками, по умолчанию обладают книгой заклинаний, а герои-маги имеют большу́ю вероятность развить все магические навыки.</p>
+      </div>
+    </div>
+    <p style="font-size: 36px; text-align: center;margin-top: 30px;">maket Кейс 1. Исходное состояние, вьюпорт 700px</p>
+    <img src="case-1.png" alt="Кейс 1. Исходное состояние, вьюпорт 700px">
+    <p>Кейс 2. Класс "tab-title--open" на втором табе, вьюпорт 700px</p>
+    <img src="case-2.png" alt="Кейс 2. Класс "tab-title--open" на втором табе, вьюпорт 700px">
+    <p>Кейс 3. Класс "tab-title--open" на третьем табе, вьюпорт 700px</p>
+    <img src="case-3.png" alt="Кейс 3. Класс "tab-title--open" на третьем табе, вьюпорт 700px">
+    <p>Кейс 4. Недополнение первом "tab-content", вьюпорт 700px</p>
+    <img src="case-4.png" alt="Кейс 4. Недополнение первом "tab-content", вьюпорт 700px">
+    <p>Кейс 5. Добавлено ещё два таба, вьюпорт 700px</p>
+    <img src="case-5.png" alt="Кейс 5. Добавлено ещё два таба, вьюпорт 700px">
+    <p>Кейс 6. Добавлено ещё два таба, класс "tab-title--open" на пятом табе, вьюпорт 700px</p>
+    <img src="case-6.png" alt="Кейс 6. Добавлено ещё два таба, класс "tab-title--open" на пятом табе, вьюпорт 700px">
+    <pre>
+        Табы
+Уровень сложности: мидл
+Категория: HTML и CSS / Готовые компоненты
+
+Доработайте исходную вёрстку, чтобы внешний вид вашей вёрстки совпадал с эталонным решением в разных условиях.
+
+Правила и подсказки:
+
+Разметку в index.html изменять нельзя
+Размеры и отступы кратны 5 пикселям
+Подготовьте такие стили, чтобы таб «открывался» при добавлении класса tab-title--open на tab-title
+Писать скрипт для оживления табов не нужно
+Сценарии тестирования:
+
+Все сценарии проверяются на ширине вьюпорта 700px
+
+Исходное состояние
+Класс tab-title--open на втором .tab-title
+Класс tab-title--open на третьем .tab-title
+Недополнение в первом .tab-content
+Добавлено ещё два таба
+Добавлено ещё два таба, класс tab-title--open на пятом табе
+    </pre>
+    <pre>
+        @font-face {
+            font-weight: 400;
+            font-family: "TT Norms Pro";
+            font-style: normal;
+            font-display: swap;
+            src: url(fonts/tt-norms-pro-400-normal.woff2)format("woff2");
+          }
+          
+          @font-face {
+            font-weight: 700;
+            font-family: "TT Norms Pro";
+            font-style: normal;
+            font-display: swap;
+            src: url(fonts/tt-norms-pro-700-normal.woff2)format("woff2");
+          }
+          
+          * {
+            box-sizing: border-box;
+          }
+          
+          body {
+            padding: 60px 10px;
+            font-family: 'TT Norms Pro', sans-serif;
+            font-weight: 400;
+            color: #333;
+            background: #A1EEFF; 
+          }
+          
+          h1 {
+            margin: 0;
+            font-family: 'TT Norms Pro', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+          }
+          
+          p {
+            margin-top: 20px;
+            margin-bottom: 0;
+            font-size: 20px;
+            line-height: 30px;
+          }
+          
+          .tabs {
+            background: #e5e5e5;
+            box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
+          }
+          
+          .tab-title {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: bold;
+            color: #7f7f7f;
+            background: #e5e5e5;
+            cursor: pointer;
+          }
+          
+          .tab-title:hover {
+            background: #d8d8d8;
+          }
+          
+          .tab-title:active {
+            background: #ccc;
+          }
+          
+          .tab-title--open {
+            background: #fff;
+            color: #000;
+          }
+          
+          .tab-content {
+            background: #fff;
+          } 
+    </pre>
+    <a href="index.html" style="background-color: red; padding: 30px;margin-left: 300px;">На главную</a>
+
+</body>
+</html>

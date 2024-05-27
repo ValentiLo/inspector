@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cтакан</title>
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--
+      Разметку можно изменять
+      Но нельзя изменять элементы с классом .text-imitator
+    -->
+    <div>
+      <span class="text-imitator text--header">Имитация текста шапки</span>
+    </div>
+    <div>
+      <span class="text-imitator text--main">Имитация текста содержания</span>
+    </div>
+    <div>
+      <span class="text-imitator text--footer">Имитация текста подвала</span>
+    </div>
+    <p>Кейс 1. Проверка на вьюпорте 640px</p>
+    <img src="case-1 st.png" alt="Кейс 1. Проверка на вьюпорте 640px">
+    <p>Кейс 2. Проверка на вьюпорте 720px</p>
+    <img src="case-2 st.png" alt="Кейс 2. Проверка на вьюпорте 720px">
+    <p>Кейс 3. Проверка на вьюпорте 720px с изменением «текста»</p>
+    <img src="case-3 st.png" alt="Кейс 3. Проверка на вьюпорте 720px с изменением «текста»">
+    <pre>
+        «Стакан» — это колонка фиксированной ширины, которая центруется внутри окна браузера. Обычно внутри стакана друг под другом располагаются крупные блоки страницы. Путь в мир сеток для каждого верстальщика начинается со стакана.
+
+Ваша задача построить сетку типа «стакан», которая будет правильно вести себя при изменении ширины браузера. Крупные блоки внутри стакана должны оставаться в потоке и реагировать на изменение размеров «контента» как в образце.
+
+Доработайте вёрстку так, чтобы её внешний вид совпадал с эталонным решением в разных условиях.
+
+Правила и подсказки
+
+Размеры и отступы кратны 5 пикселям
+Не изменяйте разметку элементов с классом .text-imitator
+Используемые цвета: #00E0FF, #000000, #FFFFFF
+Сценарии тестирования
+
+Ширина вьюпорта — 640px,
+Ширина вьюпорта — 720px,
+Ширина вьюпорта — 720px, изменены размеры «текста»
+    </pre>
+    <pre>body {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        line-height: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        background-color: #eee;
+      }
+      
+      /*
+        Настройки заглушек, имитирующих текст
+        Изменять их не надо
+      */
+      .text-imitator {
+        --total-height: 30px;
+        --total-width: 420px;
+        --text-color: #999;
+      }
+      
+      .text--header {
+        --total-width: 350px;
+        --text-color: #A1EEFF;
+      }
+      
+      .text--main {
+        --total-height: 70px;
+      }
+      
+      .text--footer {
+        --total-width: 150px;
+      }
+      
+      
+      /*
+        Стили компонента пишите здесь
+      
+        Используемые цвета
+        #00E0FF
+        #000000
+        #FFFFFF
+      */
+      </pre>
+      <a href="index.html" style="background-color: red; padding: 30px;margin-left: 300px;">На главную</a>
+
+</body>
+</html>
